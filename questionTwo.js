@@ -10,8 +10,7 @@ Output: {4, 9}, because 4 + 9 = 13.*/
 function findSumUp(nums, target) {
   const sortNums = nums.sort((a, b) => a - b);
   const sortNumsLen = sortNums.length;
-  const halfTarget = Math.floor(target / 2);
-  const halfValue = sortNums.find((v) => halfTarget < v);
+  const halfValue = sortNums.find((v) => Math.floor(target / 2) < v);
   const halfIdx = sortNums.indexOf(halfValue);
   const reverse = sortNumsLen - halfIdx < halfIdx;
 
