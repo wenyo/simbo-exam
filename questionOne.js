@@ -1,3 +1,14 @@
+/**
+ * Design a stack class that supports push, pop, top, and retrieving the maximum element.
+
+The stack stores integers only.
+
+push(int x) -- Push element x onto stack.
+pop() -- Removes the element on top of the stack.
+top() -- Get the top element.
+getMax() -- Retrieve the maximum element in the stack.
+ */
+
 class IntStack {
   constructor() {
     this.stack = [];
